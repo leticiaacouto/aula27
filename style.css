@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CRIAÇÃO das variáveis */
+:root{
+    --cor-texto-principal: #383838;
+    --cor-titulo: #6200ff;
+    --tamanho-texto: 1.5em;
+    --tamanho-titulo: 8em;
+}
+
+
+/* UTILIZAÇÃO das variáveis  */
+h1{
+    font-size: var(--tamanho-titulo);
+    color: var(--cor-titulo);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(226, 84, 226), rgb(23, 233, 233));
+    /* background-image: url(https://usagif.com/wp-content/uploads/gifs/fire-51.gif); */
+    background-clip: text;
+    -webkit-background-clip: text; /*  força o navegador a fazer algo que ele n faz */
+    -webkit-text-fill-color: transparent;
+}
